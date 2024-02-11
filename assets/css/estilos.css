@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: rgb(77, 78, 79);
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'menu'
+    'hero'
+    'propiedades';
+    grid-template-rows: 30px 300px calc(100vh - 330px);
+
+    margin-left: auto;
+    margin-right: auto;
+   background-color: #fff;
+   overflow: scroll;
+
+   
+}
+.menu{
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: black;
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero{
+    grid-area: hero;
+    background-image: url(/assets/img/img-main.jpeg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.propiedades{
+    grid-area: propiedades;
+    display: flex;
+    flex-direction: column;
+}
+.container-venta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.venta{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    overflow: hidden;
+    width: 250px;
+
+}
+.venta img{
+    width: 250px;
+    height: 150px;
+}
+.titulo{
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.descripcion{
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+.direccion{
+    font-size:11px;
+    padding-bottom: 5px;
+}
+.habitaciones{
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+.precio{
+    font-size: 13px;
+    font-weight: 500;
+    color: green;
+}
+.pet{
+    font-size: 11px;
+}
+.smoke{
+    font-size: 12px;
+}
+.container-alquiler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alquiler{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    overflow: hidden;
+    width: 250px;
+
+}
+.alquiler img{
+    width: 250px;
+    height: 150px;
+}
+.head{
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: gray;
+    
+}
+button{
+    
+    background-color: black;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+}
+.enlace{
+    padding-top: 10px;
+}
+.pet0{
+    color: red;
+}
+.pet1{
+    color: green;
+}
+.smoke0{
+    color: red;
+}
+.smoke1{
+    color: green;
+}
+
